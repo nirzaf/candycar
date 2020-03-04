@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>CandyCar - Repair, Towing, Tuning SinglePage and MultePage HTML template</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form" action="http://webdesign-finder.com/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="btn">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls p-normal">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div><!-- eof .modal -->
+
+	<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="modalLoginForm" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="row c-gutter-0">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span>×</span>
+				</button>
+				<div class="col-6">
+					<div class="modal-content">
+						<div class="modal-header justify-content-center">
+							<h4 class="modal-title">Sign in</h4>
+						</div>
+						<div class="modal-body">
+							<form action="http://webdesign-finder.com/">
+								<div class="form-group has-placeholder">
+									<label for="name-sigin">Your Name:</label>
+									<input type="text" class="form-control" id="name-sigin" placeholder="Enter your name" name="First name">
+								</div>
+								<div class="form-group has-placeholder">
+									<label for="sigpassword">Password:</label>
+									<input type="password" class="form-control" id="sigpassword" placeholder="password" name="sigpassword">
+								</div>
+								<div class="modal-password">
+									<a href="#" class="modal-password-btn">Forgot password?</a>
+								</div>
+								<div class="modal-footer d-flex justify-content-center">
+									<button type="submit" class="btn btn-small btn-maincolor log-btn">Log in</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 ds s-overlay">
+					<img src="images/modal-login-form.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<div class="header_absolute s-parallax ds bs s-overlay">
+
+				<!--topline section visible only on small screens|-->
+				<section class="page_toplogo ds s-overlay s-pt-10 s-pb-5 s-py-lg-30">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-12">
+								<div class="d-lg-flex justify-content-lg-end align-items-lg-center">
+									<div class="mr-auto">
+										<!--
+							if you want to display toplogo info on smaller screens
+							than use following CSS classes below:
+						 	d-sm-flex justify-content-sm-center
+						 -->
+										<div class="d-none d-lg-flex justify-content-center justify-content-lg-start">
+											<a href="index.html" class="logo">
+												<img src="images/logo.png" alt="">
+												<span class="logo-text fw-500">Candy<span class="fw-200">Car</span></span>
+											</a>
+										</div>
+									</div>
+									<!--
+						if you want to display toplogo info on smaller screens
+						than use following CSS classes below:
+						d-sm-flex justify-lg-content-end justify-content-sm-between align-items-center
+					-->
+									<div class="d-flex justify-lg-content-end align-items-center meta-icons">
+										<div class="media">
+											<div class="icon-styled color-main fs-20">
+												<i class="ico-email"></i>
+											</div>
+											<div class="media-body">
+												<h6>Mail Us</h6>
+												<p class="fw-400">
+													Info@candycar.com
+												</p>
+											</div>
+										</div>
+										<div class="media d-none d-md-flex">
+											<div class="icon-styled color-main fs-20">
+												<i class="ico-placeholder"></i>
+											</div>
+											<div class="media-body">
+												<h6>Location</h6>
+												<p class="fw-400">
+													Waukesha, WI 53186
+												</p>
+											</div>
+										</div>
+										<div class="media">
+											<div class="icon-styled color-main fs-20">
+												<i class="ico-phone-call"></i>
+											</div>
+											<div class="media-body">
+												<h6>Phone</h6>
+												<p class="fw-400">
+													+1 23 456 78 90
+												</p>
+											</div>
+										</div>
+										<div class="d-none d-xl-block">
+											<a href="#" class="btn btn-small btn-outline-maincolor btn-appointment">Schedule Maintenance</a>
+										</div>
+									</div>
+								</div>
+								<!-- header toggler -->
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<!--eof topline-->
+
+				<!-- header with single Bootstrap column only for navigation and includes. Used with topline and toplogo sections. Menu toggler must be in toplogo section -->
+				<header class="page_header s-py-10 s-py-lg-0 ds ms s-overlay nav-bordered justify-nav-center">
+					<div class="container-fluid">
+						<div class="row align-items-center">
+							<div class="d-lg-none col-11">
+								<a href="index.html" class="logo">
+									<img src="images/logo.png" alt="">
+									<span class="logo-text fw-500">Candy<span class="fw-200">Car</span></span>
+								</a>
+							</div>
+							<div class="col-xl-12">
+
+								<div class="nav-wrap">
+									<!-- main nav start -->
+									<nav class="top-nav">
+										<ul class="nav sf-menu">
+											<li class="active">
+												<a href="index-2.html">Home</a>
+												<ul>
+													<li>
+														<a href="index-2.html">Home 1</a>
+													</li>
+													<li>
+														<a href="index-alt.html">Home 2</a>
+													</li>
+													<li>
+														<a href="index_static.html">Static Intro</a>
+													</li>
+													<li>
+														<a href="index_singlepage.html">Single Page</a>
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												<a href="about.html">Pages</a>
+												<ul>
+													<li>
+														<a href="team.html">Team</a>
+														<ul>
+															<li>
+																<a href="team.html">Team List</a>
+															</li>
+															<li>
+																<a href="team-single.html">Team Member</a>
+															</li>
+														</ul>
+													</li>
+													<!-- blog -->
+													<li>
+														<a href="blog-right.html">Blog</a>
+														<ul>
+
+															<li>
+																<a href="blog-right.html">Right Sidebar</a>
+															</li>
+															<li>
+																<a href="blog-left.html">Left Sidebar</a>
+															</li>
+															<li>
+																<a href="blog-full.html">No Sidebar</a>
+															</li>
+															<li>
+																<a href="blog-grid.html">Blog Grid</a>
+															</li>
+
+															<li>
+																<a href="blog-single-right.html">Post</a>
+																<ul>
+																	<li>
+																		<a href="blog-single-right.html">Right Sidebar</a>
+																	</li>
+																	<li>
+																		<a href="blog-single-left.html">Left Sidebar</a>
+																	</li>
+																	<li>
+																		<a href="blog-single-full.html">No Sidebar</a>
+																	</li>
+																</ul>
+															</li>
+
+															<li>
+																<a href="blog-single-video-right.html">Video Post</a>
+																<ul>
+																	<li>
+																		<a href="blog-single-video-right.html">Right Sidebar</a>
+																	</li>
+																	<li>
+																		<a href="blog-single-video-left.html">Left Sidebar</a>
+																	</li>
+																	<li>
+																		<a href="blog-single-video-full.html">No Sidebar</a>
+																	</li>
+																</ul>
+															</li>
+
+														</ul>
+													</li>
+													<!-- eof blog -->
+
+													<li>
+														<a href="gallery-image.html">Gallery</a>
+														<ul>
+															<!-- Gallery image only -->
+															<li>
+																<a href="gallery-image.html">Gallery Regular</a>
+																<ul>
+																	<li>
+																		<a href="gallery-image-2-cols.html">2 columns</a>
+																	</li>
+																	<li>
+																		<a href="gallery-image.html">3 columns</a>
+																	</li>
+																	<li>
+																		<a href="gallery-image-4-cols-fullwidth.html">4 columns</a>
+																	</li>
+
+																</ul>
+															</li>
+															<!-- eof Gallery image only -->
+
+															<!-- Gallery with title -->
+															<li>
+																<a href="gallery-title.html">Gallery Title</a>
+																<ul>
+																	<li>
+																		<a href="gallery-title-2-cols.html">2 columns</a>
+																	</li>
+																	<li>
+																		<a href="gallery-title.html">3 column</a>
+																	</li>
+																	<li>
+																		<a href="gallery-title-4-cols-fullwidth.html">4 columns</a>
+																	</li>
+																</ul>
+															</li>
+															<!-- eof Gallery with title -->
+
+															<!-- Gallery with excerpt -->
+															<li>
+																<a href="gallery-excerpt.html">Gallery Excerpt</a>
+																<ul>
+																	<li>
+																		<a href="gallery-excerpt-2-cols.html">2 columns</a>
+																	</li>
+																	<li>
+																		<a href="gallery-excerpt.html">3 column</a>
+																	</li>
+																	<li>
+																		<a href="gallery-excerpt-4-cols-fullwidth.html">4 columns</a>
+																	</li>
+																</ul>
+															</li>
+															<!-- eof Gallery with excerpt -->
+
+
+															<li>
+																<a href="gallery-tiled.html">Tiled Gallery</a>
+															</li>
+															<!-- Gallery item -->
+
+															<li>
+																<a href="gallery2.html">Direction Gallery</a>
+															</li>
+															<li>
+																<a href="gallery-single.html">Gallery Single</a>
+																<ul>
+																	<li>
+																		<a href="gallery-single.html">Gallery Single</a>
+																	</li>
+																	<li>
+																		<a href="gallery-single2.html">Gallery Single 2</a>
+																	</li>
+																</ul>
+															</li>
+															<!-- eof Gallery item -->
+														</ul>
+													</li>
+													<!-- eof Gallery -->
+													<li>
+														<a href="pricing.html">Pricing</a>
+													</li>
+													<!-- shop -->
+													<li>
+														<a href="shop-right.html">Shop</a>
+														<ul>
+															<li>
+																<a href="shop-account-dashboard.html">Account</a>
+																<ul>
+
+																	<li>
+																		<a href="shop-account-details.html">Account details</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-addresses.html">Addresses</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-address-edit.html">Edit Address</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-orders.html">Orders</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-order-single.html">Single Order</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-downloads.html">Downloads</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-password-reset.html">Password Reset</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-login.html">Login/Logout</a>
+																	</li>
+
+																</ul>
+															</li>
+															<li>
+																<a href="shop-right.html">Right Sidebar</a>
+															</li>
+															<li>
+																<a href="shop-left.html">Left Sidebar</a>
+															</li>
+															<li>
+																<a href="shop-product-right.html">Product Right Sidebar</a>
+															</li>
+															<li>
+																<a href="shop-product-left.html">Product Left Sidebar</a>
+															</li>
+															<li>
+																<a href="shop-cart.html">Cart</a>
+															</li>
+															<li>
+																<a href="shop-checkout.html">Checkout</a>
+															</li>
+															<li>
+																<a href="shop-order-received.html">Order Received</a>
+															</li>
+
+														</ul>
+													</li>
+													<!-- eof shop -->
+
+													<!-- features -->
+													<li>
+														<a href="shortcodes_iconbox.html">Shortcodes</a>
+														<ul>
+															<li>
+																<a href="shortcodes_typography.html">Typography</a>
+															</li>
+															<li>
+																<a href="shortcodes_buttons.html">Buttons</a>
+															</li>
+
+															<li>
+																<a href="shortcodes_iconbox.html">Icon Boxes</a>
+															</li>
+															<li>
+																<a href="shortcodes_progress.html">Progress</a>
+															</li>
+															<li>
+																<a href="shortcodes_tabs.html">Tabs &amp; Collapse</a>
+															</li>
+															<li>
+																<a href="shortcodes_bootstrap.html">Bootstrap Elements</a>
+															</li>
+															<li>
+																<a href="shortcodes_animation.html">Animation</a>
+															</li>
+															<li>
+																<a href="shortcodes_icons.html">Template Icons</a>
+															</li>
+															<li>
+																<a href="shortcodes_socialicons.html">Social Icons</a>
+															</li>
+														</ul>
+													</li>
+													<!-- eof shortcodes -->
+
+													<li>
+														<a href="shortcodes_widgets_default.html">Widgets</a>
+														<ul>
+															<li>
+																<a href="shortcodes_widgets_default.html">Default Widgets</a>
+															</li>
+															<li>
+																<a href="shortcodes_widgets_shop.html">Shop Widgets</a>
+															</li>
+															<li>
+																<a href="shortcodes_widgets_custom.html">Custom Widgets</a>
+															</li>
+														</ul>
+
+													</li>
+
+
+													<!-- events -->
+													<li>
+														<a href="events-left.html">Events</a>
+														<ul>
+															<li>
+																<a href="events-left.html">Left Sidebar</a>
+															</li>
+															<li>
+																<a href="events-right.html">Right Sidebar</a>
+															</li>
+															<li>
+																<a href="events-full.html">Full Width</a>
+															</li>
+															<li>
+																<a href="event-single-left.html">Single Event</a>
+																<ul>
+																	<li>
+																		<a href="event-single-left.html">Left Sidebar</a>
+																	</li>
+																	<li>
+																		<a href="event-single-right.html">Right Sidebar</a>
+																	</li>
+																	<li>
+																		<a href="event-single-full.html">Full Width</a>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+													<!-- eof events -->
+													<li>
+														<a href="comingsoon.html">Comingsoon</a>
+													</li>
+													<li>
+														<a href="404.html">404</a>
+													</li>
+
+												</ul>
+											</li>
+											<!-- eof pages -->
+											<li>
+												<a href="services.html">Services</a>
+												<ul>
+													<li>
+														<a href="services.html">Services 1</a>
+													</li>
+													<li>
+														<a href="services2.html">Services 2</a>
+													</li>
+													<li>
+														<a href="services3.html">Services 3</a>
+													</li>
+													<li>
+														<a href="service-single.html">Single Service</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="about.html">About Us</a>
+											</li>
+											<li>
+											<li>
+												<a href="faq.html">FAQ</a>
+												<ul>
+													<li>
+														<a href="faq.html">FAQ</a>
+													</li>
+													<li>
+														<a href="faq2.html">FAQ 2</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">Features</a>
+												<div class="mega-menu">
+													<ul class="mega-menu-row">
+														<li class="mega-menu-col">
+															<a href="#">Headers</a>
+															<ul>
+																<li>
+																	<a href="header1.html">Header Type 1</a>
+																</li>
+																<li>
+																	<a href="header2.html">Header Type 2</a>
+																</li>
+																<li>
+																	<a href="header3.html">Header Type 3</a>
+																</li>
+																<li>
+																	<a href="header4.html">Header Type 4</a>
+																</li>
+																<li>
+																	<a href="header5.html">Header Type 5</a>
+																</li>
+																<li>
+																	<a href="header6.html">Header Type 6</a>
+																</li>
+															</ul>
+														</li>
+														<li class="mega-menu-col">
+															<a href="#">Side Menus</a>
+															<ul>
+																<li>
+																	<a href="header-side.html">Push Left</a>
+																</li>
+																<li>
+																	<a href="header-side-right.html">Push Right</a>
+																</li>
+																<li>
+																	<a href="header-side-slide.html">Slide Left</a>
+																</li>
+																<li>
+																	<a href="header-side-slide-right.html">Slide Right</a>
+																</li>
+																<li>
+																	<a href="header-side-sticked.html">Sticked Left</a>
+																</li>
+																<li>
+																	<a href="header-side-sticked-right.html">Sticked Right</a>
+																</li>
+															</ul>
+														</li>
+														<li class="mega-menu-col">
+															<a href="title1.html">Title Sections</a>
+															<ul>
+																<li>
+																	<a href="title1.html">Title section 1</a>
+																</li>
+																<li>
+																	<a href="title2.html">Title section 2</a>
+																</li>
+																<li>
+																	<a href="title3.html">Title section 3</a>
+																</li>
+																<li>
+																	<a href="title4.html">Title section 4</a>
+																</li>
+																<li>
+																	<a href="title5.html">Title section 5</a>
+																</li>
+																<li>
+																	<a href="title6.html">Title section 6</a>
+																</li>
+															</ul>
+														</li>
+														<li class="mega-menu-col">
+															<a href="footer1.html#footer">Footers</a>
+															<ul>
+																<li>
+																	<a href="footer1.html#footer">Footer Type 1</a>
+																</li>
+																<li>
+																	<a href="footer2.html#footer">Footer Type 2</a>
+																</li>
+																<li>
+																	<a href="footer3.html#footer">Footer Type 3</a>
+																</li>
+																<li>
+																	<a href="footer4.html#footer">Footer Type 4</a>
+																</li>
+																<li>
+																	<a href="footer5.html#footer">Footer Type 5</a>
+																</li>
+																<li>
+																	<a href="footer6.html#footer">Footer Type 6</a>
+																</li>
+															</ul>
+														</li>
+														<li class="mega-menu-col">
+															<a href="copyright1.html#copyright">Copyright</a>
+
+															<ul>
+																<li>
+																	<a href="copyright1.html#copyright">Copyright 1</a>
+																</li>
+																<li>
+																	<a href="copyright2.html#copyright">Copyright 2</a>
+																</li>
+																<li>
+																	<a href="copyright3.html#copyright">Copyright 3</a>
+																</li>
+																<li>
+																	<a href="copyright4.html#copyright">Copyright 4</a>
+																</li>
+																<li>
+																	<a href="copyright5.html#copyright">Copyright 5</a>
+																</li>
+																<li>
+																	<a href="copyright6.html#copyright">Copyright 6</a>
+																</li>
+															</ul>
+														</li>
+
+													</ul>
+												</div> <!-- eof mega menu -->
+											</li>
+											<!-- eof features -->
+											<!-- contacts -->
+											<li>
+												<a href="contact.html">Contact</a>
+												<ul>
+													<li>
+														<a href="contact.html">Contact 1</a>
+													</li>
+													<li>
+														<a href="contact2.html">Contact 2</a>
+													</li>
+													<li>
+														<a href="contact3.html">Contact 3</a>
+													</li>
+													<li>
+														<a href="contact4.html">Contact 4</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof contacts -->
+										</ul>
+
+
+									</nav>
+									<!-- eof main nav -->
+
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- header toggler -->
+
+					<span class="toggle_menu"><span></span></span>
+
+				</header>
+
+				<section class="page_title ds s-pt-105 s-pb-50 s-pt-lg-115 s-pb-lg-60">
+					<div class="divider-3 d-none d-lg-block"></div>
+					<div class="container">
+						<div class="row">
+
+							<div class="col-md-12">
+								<h1 class="bold text-center text-lg-left">Shopping Cart</h1>
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item">
+										<a href="index.html">Home</a>
+									</li>
+									<li class="breadcrumb-item">
+										<a href="#">Shop</a>
+									</li>
+									<li class="breadcrumb-item active">
+										Shopping Cart
+									</li>
+								</ol>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+
+			</div>
+
+
+			<section class="ls s-py-60 s-py-lg-100 s-pt-xl-150 s-pb-xl-140">
+				<div class="container">
+					<div class="row">
+						<main class="col-lg-12">
+							<div class="woocommerce-info">Returning customer? <a href="#" class="showlogin">Click here to login</a>
+							</div>
+
+							<form class="woocomerce-form woocommerce-form-login login" method="post" style="">
+
+
+								<p>If you have shopped with us before, please enter your details in the boxes below. If you are a new customer,
+									please proceed to the Billing &amp; Shipping section.</p>
+
+								<p class="form-row form-row-first">
+									<label for="username">Username or email <span class="required">*</span>
+									</label>
+									<input type="text" class="input-text" name="username" id="username">
+								</p>
+								<p class="form-row form-row-last">
+									<label for="password">Password <span class="required">*</span>
+									</label>
+									<input class="input-text" type="password" name="password" id="password">
+								</p>
+								<div class="clear">
+
+								</div>
+
+
+								<p class="form-row">
+
+									<input type="submit" class="button" name="login" value="Login">
+									<label>
+										<input name="rememberme" type="checkbox" id="rememberme" value="forever">
+										<span>Remember me</span>
+									</label>
+								</p>
+								<p class="lost_password">
+									<a href="shop-account-password-reset.html">Lost your password?</a>
+								</p>
+
+								<div class="clear">
+
+								</div>
+
+
+							</form>
+
+							<div class="woocommerce-info">Have a coupon? <a href="#" class="showcoupon">Click here to enter your code</a>
+							</div>
+
+							<form class="checkout_coupon" method="post" style="display: none;">
+
+								<p class="form-row form-row-first">
+									<input type="text" name="coupon_code" class="input-text" placeholder="Coupon code" id="coupon_code" value="">
+								</p>
+
+								<p class="form-row form-row-last">
+									<input type="submit" class="button" name="apply_coupon" value="Apply coupon">
+								</p>
+
+								<div class="clear">
+
+								</div>
+							</form>
+
+							<form name="checkout" method="post" class="checkout woocommerce-checkout" action="http://webdesign-finder.com/" enctype="multipart/form-data" novalidate="novalidate">
+
+
+								<div class="woocommerce-NoticeGroup woocommerce-NoticeGroup-checkout">
+									<ul class="woocommerce-error">
+										<li><strong>Billing First name</strong> is a required field.</li>
+										<li><strong>Billing Last name</strong> is a required field.</li>
+										<li>Please enter a valid postcode / ZIP.</li>
+									</ul>
+								</div>
+
+
+								<div class="col2-set" id="customer_details">
+									<div class="col-1">
+										<div class="woocommerce-billing-fields">
+
+											<h5>Billing details</h5>
+
+
+											<div class="woocommerce-billing-fields__field-wrapper">
+												<p class="form-row form-row-first validate-required woocommerce-invalid woocommerce-invalid-required-field" id="billing_first_name_field" data-priority="10">
+													<label for="billing_first_name" class="">First
+														name <abbr class="required" title="required">*</abbr>
+													</label>
+													<input type="text" class="input-text form-control" name="billing_first_name" id="billing_first_name" placeholder="First name" value="" autocomplete="given-name" autofocus="autofocus">
+												</p>
+												<p class="form-row form-row-last validate-required" id="billing_last_name_field" data-priority="20">
+													<label for="billing_last_name" class="">Last name <abbr class="required" title="required">*</abbr>
+													</label>
+													<input type="text" class="input-text form-control" name="billing_last_name" id="billing_last_name" placeholder="Last name" value="" autocomplete="family-name">
+												</p>
+												<p class="form-row form-row-wide" id="billing_company_field" data-priority="30">
+													<label for="billing_company" class="">Company name</label>
+													<input type="text" class="input-text form-control" name="billing_company" id="billing_company" placeholder="Company name" value="" autocomplete="organization">
+												</p>
+												<p class="form-row form-row-wide address-field update_totals_on_change validate-required woocommerce-validated" id="billing_country_field" data-priority="40">
+													<label for="billing_country" class="">Country
+														<abbr class="required" title="required">*</abbr>
+													</label>
+													<select name="billing_country" id="billing_country" class="country_to_state country_select  select2-hidden-accessible" autocomplete="country" tabindex="-1" aria-hidden="true">
+														<option value="">Select a country…</option>
+														<option value="AX">Åland Islands</option>
+														<option value="AF">Afghanistan</option>
+														<option value="AL">Albania</option>
+														<option value="DZ">Algeria</option>
+														<option value="AS">American Samoa</option>
+														<option value="AD">Andorra</option>
+														<option value="AO">Angola</option>
+														<option value="AI">Anguilla</option>
+														<option value="AQ">Antarctica</option>
+														<option value="AG">Antigua and Barbuda</option>
+														<option value="AR">Argentina</option>
+														<option value="AM">Armenia</option>
+														<option value="AW">Aruba</option>
+														<option value="AU">Australia</option>
+														<option value="AT">Austria</option>
+														<option value="AZ">Azerbaijan</option>
+														<option value="BS">Bahamas</option>
+														<option value="BH">Bahrain</option>
+														<option value="BD">Bangladesh</option>
+														<option value="BB">Barbados</option>
+														<option value="BY">Belarus</option>
+														<option value="PW">Belau</option>
+														<option value="BE">Belgium</option>
+														<option value="BZ">Belize</option>
+														<option value="BJ">Benin</option>
+														<option value="BM">Bermuda</option>
+														<option value="BT">Bhutan</option>
+														<option value="BO">Bolivia</option>
+														<option value="BQ">Bonaire, Saint Eustatius and Saba</option>
+														<option value="BA">Bosnia and Herzegovina</option>
+														<option value="BW">Botswana</option>
+														<option value="BV">Bouvet Island</option>
+														<option value="BR">Brazil</option>
+														<option value="IO">British Indian Ocean Territory</option>
+														<option value="VG">British Virgin Islands</option>
+														<option value="BN">Brunei</option>
+														<option value="BG">Bulgaria</option>
+														<option value="BF">Burkina Faso</option>
+														<option value="BI">Burundi</option>
+														<option value="KH">Cambodia</option>
+														<option value="CM">Cameroon</option>
+														<option value="CA">Canada</option>
+														<option value="CV">Cape Verde</option>
+														<option value="KY">Cayman Islands</option>
+														<option value="CF">Central African Republic</option>
+														<option value="TD">Chad</option>
+														<option value="CL">Chile</option>
+														<option value="CN">China</option>
+														<option value="CX">Christmas Island</option>
+														<option value="CC">Cocos (Keeling) Islands</option>
+														<option value="CO">Colombia</option>
+														<option value="KM">Comoros</option>
+														<option value="CG">Congo (Brazzaville)</option>
+														<option value="CD">Congo (Kinshasa)</option>
+														<option value="CK">Cook Islands</option>
+														<option value="CR">Costa Rica</option>
+														<option value="HR">Croatia</option>
+														<option value="CU">Cuba</option>
+														<option value="CW">Curaçao</option>
+														<option value="CY">Cyprus</option>
+														<option value="CZ">Czech Republic</option>
+														<option value="DK">Denmark</option>
+														<option value="DJ">Djibouti</option>
+														<option value="DM">Dominica</option>
+														<option value="DO">Dominican Republic</option>
+														<option value="EC">Ecuador</option>
+														<option value="EG">Egypt</option>
+														<option value="SV">El Salvador</option>
+														<option value="GQ">Equatorial Guinea</option>
+														<option value="ER">Eritrea</option>
+														<option value="EE">Estonia</option>
+														<option value="ET">Ethiopia</option>
+														<option value="FK">Falkland Islands</option>
+														<option value="FO">Faroe Islands</option>
+														<option value="FJ">Fiji</option>
+														<option value="FI">Finland</option>
+														<option value="FR">France</option>
+														<option value="GF">French Guiana</option>
+														<option value="PF">French Polynesia</option>
+														<option value="TF">French Southern Territories</option>
+														<option value="GA">Gabon</option>
+														<option value="GM">Gambia</option>
+														<option value="GE">Georgia</option>
+														<option value="DE">Germany</option>
+														<option value="GH">Ghana</option>
+														<option value="GI">Gibraltar</option>
+														<option value="GR">Greece</option>
+														<option value="GL">Greenland</option>
+														<option value="GD">Grenada</option>
+														<option value="GP">Guadeloupe</option>
+														<option value="GU">Guam</option>
+														<option value="GT">Guatemala</option>
+														<option value="GG">Guernsey</option>
+														<option value="GN">Guinea</option>
+														<option value="GW">Guinea-Bissau</option>
+														<option value="GY">Guyana</option>
+														<option value="HT">Haiti</option>
+														<option value="HM">Heard Island and McDonald Islands</option>
+														<option value="HN">Honduras</option>
+														<option value="HK">Hong Kong</option>
+														<option value="HU">Hungary</option>
+														<option value="IS">Iceland</option>
+														<option value="IN">India</option>
+														<option value="ID">Indonesia</option>
+														<option value="IR">Iran</option>
+														<option value="IQ">Iraq</option>
+														<option value="IE">Ireland</option>
+														<option value="IM">Isle of Man</option>
+														<option value="IL">Israel</option>
+														<option value="IT">Italy</option>
+														<option value="CI">Ivory Coast</option>
+														<option value="JM">Jamaica</option>
+														<option value="JP">Japan</option>
+														<option value="JE">Jersey</option>
+														<option value="JO">Jordan</option>
+														<option value="KZ">Kazakhstan</option>
+														<option value="KE">Kenya</option>
+														<option value="KI">Kiribati</option>
+														<option value="KW">Kuwait</option>
+														<option value="KG">Kyrgyzstan</option>
+														<option value="LA">Laos</option>
+														<option value="LV">Latvia</option>
+														<option value="LB">Lebanon</option>
+														<option value="LS">Lesotho</option>
+														<option value="LR">Liberia</option>
+														<option value="LY">Libya</option>
+														<option value="LI">Liechtenstein</option>
+														<option value="LT">Lithuania</option>
+														<option value="LU">Luxembourg</option>
+														<option value="MO">Macao S.A.R., China</option>
+														<option value="MK">Macedonia</option>
+														<option value="MG">Madagascar</option>
+														<option value="MW">Malawi</option>
+														<option value="MY">Malaysia</option>
+														<option value="MV">Maldives</option>
+														<option value="ML">Mali</option>
+														<option value="MT">Malta</option>
+														<option value="MH">Marshall Islands</option>
+														<option value="MQ">Martinique</option>
+														<option value="MR">Mauritania</option>
+														<option value="MU">Mauritius</option>
+														<option value="YT">Mayotte</option>
+														<option value="MX">Mexico</option>
+														<option value="FM">Micronesia</option>
+														<option value="MD">Moldova</option>
+														<option value="MC">Monaco</option>
+														<option value="MN">Mongolia</option>
+														<option value="ME">Montenegro</option>
+														<option value="MS">Montserrat</option>
+														<option value="MA">Morocco</option>
+														<option value="MZ">Mozambique</option>
+														<option value="MM">Myanmar</option>
+														<option value="NA">Namibia</option>
+														<option value="NR">Nauru</option>
+														<option value="NP">Nepal</option>
+														<option value="NL">Netherlands</option>
+														<option value="NC">New Caledonia</option>
+														<option value="NZ">New Zealand</option>
+														<option value="NI">Nicaragua</option>
+														<option value="NE">Niger</option>
+														<option value="NG">Nigeria</option>
+														<option value="NU">Niue</option>
+														<option value="NF">Norfolk Island</option>
+														<option value="KP">North Korea</option>
+														<option value="MP">Northern Mariana Islands</option>
+														<option value="NO">Norway</option>
+														<option value="OM">Oman</option>
+														<option value="PK">Pakistan</option>
+														<option value="PS">Palestinian Territory</option>
+														<option value="PA">Panama</option>
+														<option value="PG">Papua New Guinea</option>
+														<option value="PY">Paraguay</option>
+														<option value="PE">Peru</option>
+														<option value="PH">Philippines</option>
+														<option value="PN">Pitcairn</option>
+														<option value="PL">Poland</option>
+														<option value="PT">Portugal</option>
+														<option value="PR">Puerto Rico</option>
+														<option value="QA">Qatar</option>
+														<option value="RE">Reunion</option>
+														<option value="RO">Romania</option>
+														<option value="RU">Russia</option>
+														<option value="RW">Rwanda</option>
+														<option value="ST">São Tomé and Príncipe</option>
+														<option value="BL">Saint Barthélemy</option>
+														<option value="SH">Saint Helena</option>
+														<option value="KN">Saint Kitts and Nevis</option>
+														<option value="LC">Saint Lucia</option>
+														<option value="SX">Saint Martin (Dutch part)</option>
+														<option value="MF">Saint Martin (French part)</option>
+														<option value="PM">Saint Pierre and Miquelon</option>
+														<option value="VC">Saint Vincent and the Grenadines</option>
+														<option value="WS">Samoa</option>
+														<option value="SM">San Marino</option>
+														<option value="SA">Saudi Arabia</option>
+														<option value="SN">Senegal</option>
+														<option value="RS">Serbia</option>
+														<option value="SC">Seychelles</option>
+														<option value="SL">Sierra Leone</option>
+														<option value="SG">Singapore</option>
+														<option value="SK">Slovakia</option>
+														<option value="SI">Slovenia</option>
+														<option value="SB">Solomon Islands</option>
+														<option value="SO">Somalia</option>
+														<option value="ZA">South Africa</option>
+														<option value="GS">South Georgia/Sandwich Islands</option>
+														<option value="KR">South Korea</option>
+														<option value="SS">South Sudan</option>
+														<option value="ES">Spain</option>
+														<option value="LK">Sri Lanka</option>
+														<option value="SD">Sudan</option>
+														<option value="SR">Suriname</option>
+														<option value="SJ">Svalbard and Jan Mayen</option>
+														<option value="SZ">Swaziland</option>
+														<option value="SE">Sweden</option>
+														<option value="CH">Switzerland</option>
+														<option value="SY">Syria</option>
+														<option value="TW">Taiwan</option>
+														<option value="TJ">Tajikistan</option>
+														<option value="TZ">Tanzania</option>
+														<option value="TH">Thailand</option>
+														<option value="TL">Timor-Leste</option>
+														<option value="TG">Togo</option>
+														<option value="TK">Tokelau</option>
+														<option value="TO">Tonga</option>
+														<option value="TT">Trinidad and Tobago</option>
+														<option value="TN">Tunisia</option>
+														<option value="TR">Turkey</option>
+														<option value="TM">Turkmenistan</option>
+														<option value="TC">Turks and Caicos Islands</option>
+														<option value="TV">Tuvalu</option>
+														<option value="UG">Uganda</option>
+														<option value="UA">Ukraine</option>
+														<option value="AE">United Arab Emirates</option>
+														<option value="GB">United Kingdom (UK)</option>
+														<option value="US" selected="selected">United States (US)</option>
+														<option value="UM">United States (US) Minor Outlying Islands</option>
+														<option value="VI">United States (US) Virgin Islands</option>
+														<option value="UY">Uruguay</option>
+														<option value="UZ">Uzbekistan</option>
+														<option value="VU">Vanuatu</option>
+														<option value="VA">Vatican</option>
+														<option value="VE">Venezuela</option>
+														<option value="VN">Vietnam</option>
+														<option value="WF">Wallis and Futuna</option>
+														<option value="EH">Western Sahara</option>
+														<option value="YE">Yemen</option>
+														<option value="ZM">Zambia</option>
+														<option value="ZW">Zimbabwe</option>
+													</select>
+												</p>
+												<p class="form-row form-row-wide address-field validate-required" id="billing_address_1_field" data-priority="50">
+													<label for="billing_address_1" class="">Street
+														address <abbr class="required" title="required">*</abbr>
+													</label>
+													<input type="text" class="input-text form-control" name="billing_address_1" id="billing_address_1" placeholder="House number and street name" value="" autocomplete="address-line1">
+												</p>
+												<p class="form-row form-row-wide address-field" id="billing_address_2_field" data-priority="60">
+													<input type="text" class="input-text form-control" name="billing_address_2" id="billing_address_2" placeholder="Apartment, suite, unit etc. (optional)" value="" autocomplete="address-line2">
+												</p>
+												<p class="form-row form-row-wide address-field validate-required" id="billing_city_field" data-priority="70" data-o_class="form-row form-row-wide address-field validate-required">
+													<label for="billing_city" class="">Town / City <abbr class="required" title="required">*</abbr>
+													</label>
+													<input type="text" class="input-text form-control" name="billing_city" id="billing_city" placeholder="Town / City" value="" autocomplete="address-level2">
+												</p>
+												<p class="form-row form-row-wide address-field validate-state validate-required" id="billing_state_field" data-priority="80" data-o_class="form-row form-row-wide address-field validate-required validate-state">
+													<label for="billing_state" class="">State / County <abbr class="required" title="required">*</abbr>
+													</label>
+													<input type="text" class="input-text form-control" value="" placeholder="tate / County " name="billing_state" id="billing_state" autocomplete="address-level1">
+												</p>
+												<p class="form-row form-row-wide address-field validate-postcode validate-required" id="billing_postcode_field" data-priority="90" data-o_class="form-row form-row-wide address-field validate-required validate-postcode">
+													<label for="billing_postcode" class="">Postcode / ZIP <abbr class="required" title="required">*</abbr>
+													</label>
+													<input type="text" class="input-text form-control" name="billing_postcode" id="billing_postcode" placeholder="Postcode / ZIP" value="" autocomplete="postal-code">
+												</p>
+												<p class="form-row form-row-first validate-required validate-phone" id="billing_phone_field" data-priority="100">
+													<label for="billing_phone" class="">Phone <abbr class="required" title="required">*</abbr>
+													</label>
+													<input type="tel" class="input-text form-control" name="billing_phone" id="billing_phone" placeholder="billing phone" value="" autocomplete="tel">
+												</p>
+												<p class="form-row form-row-last validate-required validate-email" id="billing_email_field" data-priority="110">
+													<label for="billing_email" class="">Email address <abbr class="required" title="required">*</abbr>
+													</label>
+													<input type="email" class="input-text form-control" name="billing_email" id="billing_email" placeholder="" value="admin@test.com" autocomplete="email">
+												</p>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+
+								<h5 id="order_review_heading">Your order</h5>
+
+
+								<div id="order_review" class="woocommerce-checkout-review-order">
+									<table class="shop_table woocommerce-checkout-review-order-table">
+										<thead>
+											<tr>
+												<th class="product-name">Product</th>
+												<th class="product-total">Total</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="cart_item">
+												<td class="product-name">
+													Premium Quality&nbsp; <strong class="product-quantity">× 1</strong>
+												</td>
+												<td class="product-total">
+													<span class="woocommerce-Price-amount amount">
+														<span class="woocommerce-Price-currencySymbol">$</span>12.00</span>
+												</td>
+											</tr>
+											<tr class="cart_item">
+												<td class="product-name">
+													Woo Ninja&nbsp; <strong class="product-quantity">× 1</strong>
+												</td>
+												<td class="product-total">
+													<span class="woocommerce-Price-amount amount">
+														<span class="woocommerce-Price-currencySymbol">$</span>15.00</span>
+												</td>
+											</tr>
+											<tr class="cart_item">
+												<td class="product-name">
+													Woo Album #3&nbsp; <strong class="product-quantity">× 2</strong>
+												</td>
+												<td class="product-total">
+													<span class="woocommerce-Price-amount amount">
+														<span class="woocommerce-Price-currencySymbol">$</span>18.00</span>
+												</td>
+											</tr>
+										</tbody>
+										<tfoot>
+
+											<tr class="cart-subtotal">
+												<th>Subtotal</th>
+												<td>
+													<span class="woocommerce-Price-amount amount">
+														<span class="woocommerce-Price-currencySymbol">$</span>45.00</span>
+												</td>
+											</tr>
+
+
+											<tr class="order-total">
+												<th>Total</th>
+												<td>
+													<strong>
+                        <span class="woocommerce-Price-amount amount">
+                            <span
+                                    class="woocommerce-Price-currencySymbol">$</span>45.00</span>
+                    </strong>
+												</td>
+											</tr>
+
+
+										</tfoot>
+									</table>
+
+									<div id="payment" class="woocommerce-checkout-payment">
+										<ul class="wc_payment_methods payment_methods methods">
+											<li class="wc_payment_method payment_method_cheque">
+												<input id="payment_method_cheque" type="radio" class="input-radio" name="payment_method" value="cheque" checked="checked" data-order_button_text="">
+
+												<label for="payment_method_cheque">
+													Check payments </label>
+												<div class="payment_box payment_method_cheque" style="display: none;">
+													<p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store
+														Postcode.</p>
+												</div>
+											</li>
+											<li class="wc_payment_method payment_method_cod">
+												<input id="payment_method_cod" type="radio" class="input-radio" name="payment_method" value="cod" data-order_button_text="">
+
+												<label for="payment_method_cod">
+													Cash on delivery </label>
+												<div class="payment_box payment_method_cod" style="display: block;">
+													<p>Pay with cash upon delivery.</p>
+												</div>
+											</li>
+										</ul>
+										<div class="form-row place-order">
+											<noscript>
+												Since your browser does not support JavaScript, or it is disabled, please ensure you click the
+												&lt;em&gt;Update Totals&lt;/em&gt; button before placing your order. You may be charged more
+												than the amount stated above if you fail to do so. &lt;br/&gt;&lt;input type="submit"
+												class="button alt" name="woocommerce_checkout_update_totals" value="Update totals" /&gt;
+											</noscript>
+
+											<button type="submit" class="btn btn-outline-maincolor small-button" name="woocommerce_checkout_place_order">Place order</button>
+
+										</div>
+									</div>
+
+								</div>
+
+
+							</form>
+
+
+						</main>
+					</div>
+				</div>
+				<div class="divider-10 d-none d-xl-block"></div>
+			</section>
+
+
+			<footer class="page_footer text-center text-md-left ds ms s-pt-65 s-pt-lg-125 s-pb-lg-35 c-gutter-40 main-footer">
+				<div class="container">
+					<div class="row">
+						<div class="divider-20 d-none d-lg-block"></div>
+
+						<div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+
+							<div class="widget widget_icons_list">
+								<a href="index.html" class="logo">
+									<img src="images/logo.png" alt="">
+									<span class="logo-text fw-500">Candy<span class="fw-200">Car</span></span>
+								</a>
+								<div class="media side-icon-box">
+									<div class="icon-styled color-main">
+										<i class="fa fa-map-marker"></i>
+									</div>
+									<p class="media-body color-grey">2688 Simpson Avenue Harrisburg, PA 17109 </p>
+								</div>
+								<div class="media side-icon-box">
+									<div class="icon-styled color-main">
+										<i class="fa fa-phone"></i>
+									</div>
+
+									<p class="media-body color-grey">+1 234 56 78</p>
+								</div>
+								<div class="media side-icon-box">
+									<div class="icon-styled color-main">
+										<i class="fa fa-envelope"></i>
+									</div>
+									<p class="media-body color-grey">
+										<a href="mailto:">info@candycar.com</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-3 animate order-md-3 order-lg-2" data-animation="fadeInUp">
+							<div class="widget widget_page_links">
+								<h3>Useful Pages</h3>
+								<ul>
+									<li>
+										<a href="#"><i class="ico-check-circle"></i>Contact Us</a>
+									</li>
+									<li>
+										<a href="#"><i class="ico-check-circle"></i>Blog post</a>
+									</li>
+									<li>
+										<a href="#"><i class="ico-check-circle"></i>About Us</a>
+									</li>
+									<li>
+										<a href="#"><i class="ico-check-circle"></i>Services</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-3 animate order-md-4 order-lg-3" data-animation="fadeInUp">
+							<div class="widget widget_services_links">
+								<h3>Services</h3>
+								<ul>
+									<li>
+										<a href="#"><i class="ico-check-circle"></i>Exterior Hand Wash</a>
+									</li>
+									<li>
+										<a href="#"><i class="ico-check-circle"></i>Tower Hand Dry</a>
+									</li>
+									<li>
+										<a href="#"><i class="ico-check-circle"></i>Tire Dressing</a>
+									</li>
+									<li>
+										<a href="#"><i class="ico-check-circle"></i>Wheel Shine</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-3 c-gutter-10 animate order-lg-4" data-animation="fadeInUp">
+							<div class="widget widget_working_hours">
+								<h3>Our Hours</h3>
+								<ul>
+									<li class="row">
+										<div class="color-grey col-3">
+											Mn-Fr
+										</div>
+										<div class="col-md-9 col-5">
+											<span class="color-darkgrey">9.<sup>00</sup>am - 8.<sup>00</sup>pm</span>
+										</div>
+									</li>
+									<li class="row">
+										<div class="color-grey col-3">
+											Sat
+										</div>
+										<div class="col-md-9 col-5">
+											<span class="color-darkgrey">9.<sup>00</sup>am - 4.<sup>00</sup>pm</span>
+										</div>
+									</li>
+									<li class="row">
+										<div class="color-grey col-3">
+											Sun
+										</div>
+										<div class="col-md-9 col-5">
+											<span class="color-darkgrey">output</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</footer>
+
+
+			<section class="page_copyright ds ms s-pt-5 s-pb-25 s-py-lg-20">
+				<div class="container">
+					<div class="divider-2 d-none d-lg-block"></div>
+					<div class="row align-items-center">
+						<div class="divider-20 d-none d-lg-block"></div>
+
+						<div class="col-md-12 text-center">
+							<p class="social-icons with-border">
+								<span><a href="https://www.facebook.com/" class="fa fa-facebook border-icon rounded-icon" title="facebook"></a></span>
+								<span><a href="https://telegram.org/" class="fa fa-paper-plane border-icon rounded-icon" title="telegram"></a></span>
+								<span><a href="https://www.instagram.com/" class="fa fa-instagram border-icon rounded-icon" title="instagram"></a></span>
+							</p>
+							<p><a target="_blank" href="https://templateshub.net">Templates Hub</a></p>
+						</div>
+						<div class="divider-20 d-none d-lg-block"></div>
+					</div>
+				</div>
+			</section>
+
+
+		</div><!-- eof #box_wrapper -->
+	</div><!-- eof #canvas -->
+
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/switcher.js"></script>
+
+</body>
+
+</html>

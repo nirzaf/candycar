@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+	<title>CandyCar - Repair, Towing, Tuning SinglePage and MultePage HTML template</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form" action="http://webdesign-finder.com/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="btn">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls p-normal">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div><!-- eof .modal -->
+
+	<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="modalLoginForm" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="row c-gutter-0">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span>×</span>
+				</button>
+				<div class="col-6">
+					<div class="modal-content">
+						<div class="modal-header justify-content-center">
+							<h4 class="modal-title">Sign in</h4>
+						</div>
+						<div class="modal-body">
+							<form action="http://webdesign-finder.com/">
+								<div class="form-group has-placeholder">
+									<label for="name-sigin">Your Name:</label>
+									<input type="text" class="form-control" id="name-sigin" placeholder="Enter your name" name="First name">
+								</div>
+								<div class="form-group has-placeholder">
+									<label for="sigpassword">Password:</label>
+									<input type="password" class="form-control" id="sigpassword" placeholder="password" name="sigpassword">
+								</div>
+								<div class="modal-password">
+									<a href="#" class="modal-password-btn">Forgot password?</a>
+								</div>
+								<div class="modal-footer d-flex justify-content-center">
+									<button type="submit" class="btn btn-small btn-maincolor log-btn">Log in</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 ds s-overlay">
+					<img src="images/modal-login-form.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+
+			<div class="header_absolute s-parallax ds bs s-overlay">
+
+				<!--topline section visible only on small screens|-->
+				<section class="page_toplogo ds s-overlay s-pt-10 s-pb-5 s-py-lg-30">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-12">
+								<div class="d-lg-flex justify-content-lg-end align-items-lg-center">
+									<div class="mr-auto">
+										<!--
+							if you want to display toplogo info on smaller screens
+							than use following CSS classes below:
+						 	d-sm-flex justify-content-sm-center
+						 -->
+										<div class="d-none d-lg-flex justify-content-center justify-content-lg-start">
+											<a href="index.html" class="logo">
+												<img src="images/logo.png" alt="">
+												<span class="logo-text fw-500">Candy<span class="fw-200">Car</span></span>
+											</a>
+										</div>
+									</div>
+									<!--
+						if you want to display toplogo info on smaller screens
+						than use following CSS classes below:
+						d-sm-flex justify-lg-content-end justify-content-sm-between align-items-center
+					-->
+									<div class="d-flex justify-lg-content-end align-items-center meta-icons">
+										<div class="media">
+											<div class="icon-styled color-main fs-20">
+												<i class="ico-email"></i>
+											</div>
+											<div class="media-body">
+												<h6>Mail Us</h6>
+												<p class="fw-400">
+													Info@candycar.com
+												</p>
+											</div>
+										</div>
+										<div class="media d-none d-md-flex">
+											<div class="icon-styled color-main fs-20">
+												<i class="ico-placeholder"></i>
+											</div>
+											<div class="media-body">
+												<h6>Location</h6>
+												<p class="fw-400">
+													Waukesha, WI 53186
+												</p>
+											</div>
+										</div>
+										<div class="media">
+											<div class="icon-styled color-main fs-20">
+												<i class="ico-phone-call"></i>
+											</div>
+											<div class="media-body">
+												<h6>Phone</h6>
+												<p class="fw-400">
+													+1 23 456 78 90
+												</p>
+											</div>
+										</div>
+										<div class="d-none d-xl-block">
+											<a href="#" class="btn btn-small btn-outline-maincolor btn-appointment">Schedule Maintenance</a>
+										</div>
+									</div>
+								</div>
+								<!-- header toggler -->
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<!--eof topline-->
+
+				<!-- header with single Bootstrap column only for navigation and includes. Used with topline and toplogo sections. Menu toggler must be in toplogo section -->
+				<header class="page_header s-py-10 s-py-lg-0 ds ms s-overlay nav-bordered justify-nav-center">
+					<div class="container-fluid">
+						<div class="row align-items-center">
+							<div class="d-lg-none col-11">
+								<a href="index.html" class="logo">
+									<img src="images/logo.png" alt="">
+									<span class="logo-text fw-500">Candy<span class="fw-200">Car</span></span>
+								</a>
+							</div>
+							<div class="col-xl-12">
+
+								<div class="nav-wrap">
+									<!-- main nav start -->
+									<nav class="top-nav">
+										<ul class="nav sf-menu">
+											<li class="active">
+												<a href="index-2.html">Home</a>
+												<ul>
+													<li>
+														<a href="index-2.html">Home 1</a>
+													</li>
+													<li>
+														<a href="index-alt.html">Home 2</a>
+													</li>
+													<li>
+														<a href="index_static.html">Static Intro</a>
+													</li>
+													<li>
+														<a href="index_singlepage.html">Single Page</a>
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												<a href="about.html">Pages</a>
+												<ul>
+													<li>
+														<a href="team.html">Team</a>
+														<ul>
+															<li>
+																<a href="team.html">Team List</a>
+															</li>
+															<li>
+																<a href="team-single.html">Team Member</a>
+															</li>
+														</ul>
+													</li>
+													<!-- blog -->
+													<li>
+														<a href="blog-right.html">Blog</a>
+														<ul>
+
+															<li>
+																<a href="blog-right.html">Right Sidebar</a>
+															</li>
+															<li>
+																<a href="blog-left.html">Left Sidebar</a>
+															</li>
+															<li>
+																<a href="blog-full.html">No Sidebar</a>
+															</li>
+															<li>
+																<a href="blog-grid.html">Blog Grid</a>
+															</li>
+
+															<li>
+																<a href="blog-single-right.html">Post</a>
+																<ul>
+																	<li>
+																		<a href="blog-single-right.html">Right Sidebar</a>
+																	</li>
+																	<li>
+																		<a href="blog-single-left.html">Left Sidebar</a>
+																	</li>
+																	<li>
+																		<a href="blog-single-full.html">No Sidebar</a>
+																	</li>
+																</ul>
+															</li>
+
+															<li>
+																<a href="blog-single-video-right.html">Video Post</a>
+																<ul>
+																	<li>
+																		<a href="blog-single-video-right.html">Right Sidebar</a>
+																	</li>
+																	<li>
+																		<a href="blog-single-video-left.html">Left Sidebar</a>
+																	</li>
+																	<li>
+																		<a href="blog-single-video-full.html">No Sidebar</a>
+																	</li>
+																</ul>
+															</li>
+
+														</ul>
+													</li>
+													<!-- eof blog -->
+
+													<li>
+														<a href="gallery-image.html">Gallery</a>
+														<ul>
+															<!-- Gallery image only -->
+															<li>
+																<a href="gallery-image.html">Gallery Regular</a>
+																<ul>
+																	<li>
+																		<a href="gallery-image-2-cols.html">2 columns</a>
+																	</li>
+																	<li>
+																		<a href="gallery-image.html">3 columns</a>
+																	</li>
+																	<li>
+																		<a href="gallery-image-4-cols-fullwidth.html">4 columns</a>
+																	</li>
+
+																</ul>
+															</li>
+															<!-- eof Gallery image only -->
+
+															<!-- Gallery with title -->
+															<li>
+																<a href="gallery-title.html">Gallery Title</a>
+																<ul>
+																	<li>
+																		<a href="gallery-title-2-cols.html">2 columns</a>
+																	</li>
+																	<li>
+																		<a href="gallery-title.html">3 column</a>
+																	</li>
+																	<li>
+																		<a href="gallery-title-4-cols-fullwidth.html">4 columns</a>
+																	</li>
+																</ul>
+															</li>
+															<!-- eof Gallery with title -->
+
+															<!-- Gallery with excerpt -->
+															<li>
+																<a href="gallery-excerpt.html">Gallery Excerpt</a>
+																<ul>
+																	<li>
+																		<a href="gallery-excerpt-2-cols.html">2 columns</a>
+																	</li>
+																	<li>
+																		<a href="gallery-excerpt.html">3 column</a>
+																	</li>
+																	<li>
+																		<a href="gallery-excerpt-4-cols-fullwidth.html">4 columns</a>
+																	</li>
+																</ul>
+															</li>
+															<!-- eof Gallery with excerpt -->
+
+
+															<li>
+																<a href="gallery-tiled.html">Tiled Gallery</a>
+															</li>
+															<!-- Gallery item -->
+
+															<li>
+																<a href="gallery2.html">Direction Gallery</a>
+															</li>
+															<li>
+																<a href="gallery-single.html">Gallery Single</a>
+																<ul>
+																	<li>
+																		<a href="gallery-single.html">Gallery Single</a>
+																	</li>
+																	<li>
+																		<a href="gallery-single2.html">Gallery Single 2</a>
+																	</li>
+																</ul>
+															</li>
+															<!-- eof Gallery item -->
+														</ul>
+													</li>
+													<!-- eof Gallery -->
+													<li>
+														<a href="pricing.html">Pricing</a>
+													</li>
+													<!-- shop -->
+													<li>
+														<a href="shop-right.html">Shop</a>
+														<ul>
+															<li>
+																<a href="shop-account-dashboard.html">Account</a>
+																<ul>
+
+																	<li>
+																		<a href="shop-account-details.html">Account details</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-addresses.html">Addresses</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-address-edit.html">Edit Address</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-orders.html">Orders</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-order-single.html">Single Order</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-downloads.html">Downloads</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-password-reset.html">Password Reset</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-login.html">Login/Logout</a>
+																	</li>
+
+																</ul>
+															</li>
+															<li>
+																<a href="shop-right.html">Right Sidebar</a>
+															</li>
+															<li>
+																<a href="shop-left.html">Left Sidebar</a>
+															</li>
+															<li>
+																<a href="shop-product-right.html">Product Right Sidebar</a>
+															</li>
+															<li>
+																<a href="shop-product-left.html">Product Left Sidebar</a>
+															</li>
+															<li>
+																<a href="shop-cart.html">Cart</a>
+															</li>
+															<li>
+																<a href="shop-checkout.html">Checkout</a>
+															</li>
+															<li>
+																<a href="shop-order-received.html">Order Received</a>
+															</li>
+
+														</ul>
+													</li>
+													<!-- eof shop -->
+
+													<!-- features -->
+													<li>
+														<a href="shortcodes_iconbox.html">Shortcodes</a>
+														<ul>
+															<li>
+																<a href="shortcodes_typography.html">Typography</a>
+															</li>
+															<li>
+																<a href="shortcodes_buttons.html">Buttons</a>
+															</li>
+
+															<li>
+																<a href="shortcodes_iconbox.html">Icon Boxes</a>
+															</li>
+															<li>
+																<a href="shortcodes_progress.html">Progress</a>
+															</li>
+															<li>
+																<a href="shortcodes_tabs.html">Tabs &amp; Collapse</a>
+															</li>
+															<li>
+																<a href="shortcodes_bootstrap.html">Bootstrap Elements</a>
+															</li>
+															<li>
+																<a href="shortcodes_animation.html">Animation</a>
+															</li>
+															<li>
+																<a href="shortcodes_icons.html">Template Icons</a>
+															</li>
+															<li>
+																<a href="shortcodes_socialicons.html">Social Icons</a>
+															</li>
+														</ul>
+													</li>
+													<!-- eof shortcodes -->
+
+													<li>
+														<a href="shortcodes_widgets_default.html">Widgets</a>
+														<ul>
+															<li>
+																<a href="shortcodes_widgets_default.html">Default Widgets</a>
+															</li>
+															<li>
+																<a href="shortcodes_widgets_shop.html">Shop Widgets</a>
+															</li>
+															<li>
+																<a href="shortcodes_widgets_custom.html">Custom Widgets</a>
+															</li>
+														</ul>
+
+													</li>
+
+
+													<!-- events -->
+													<li>
+														<a href="events-left.html">Events</a>
+														<ul>
+															<li>
+																<a href="events-left.html">Left Sidebar</a>
+															</li>
+															<li>
+																<a href="events-right.html">Right Sidebar</a>
+															</li>
+															<li>
+																<a href="events-full.html">Full Width</a>
+															</li>
+															<li>
+																<a href="event-single-left.html">Single Event</a>
+																<ul>
+																	<li>
+																		<a href="event-single-left.html">Left Sidebar</a>
+																	</li>
+																	<li>
+																		<a href="event-single-right.html">Right Sidebar</a>
+																	</li>
+																	<li>
+																		<a href="event-single-full.html">Full Width</a>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+													<!-- eof events -->
+													<li>
+														<a href="comingsoon.html">Comingsoon</a>
+													</li>
+													<li>
+														<a href="404.html">404</a>
+													</li>
+
+												</ul>
+											</li>
+											<!-- eof pages -->
+											<li>
+												<a href="services.html">Services</a>
+												<ul>
+													<li>
+														<a href="services.html">Services 1</a>
+													</li>
+													<li>
+														<a href="services2.html">Services 2</a>
+													</li>
+													<li>
+														<a href="services3.html">Services 3</a>
+													</li>
+													<li>
+														<a href="service-single.html">Single Service</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="about.html">About Us</a>
+											</li>
+											<li>
+											<li>
+												<a href="faq.html">FAQ</a>
+												<ul>
+													<li>
+														<a href="faq.html">FAQ</a>
+													</li>
+													<li>
+														<a href="faq2.html">FAQ 2</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">Features</a>
+												<div class="mega-menu">
+													<ul class="mega-menu-row">
+														<li class="mega-menu-col">
+															<a href="#">Headers</a>
+															<ul>
+																<li>
+																	<a href="header1.html">Header Type 1</a>
+																</li>
+																<li>
+																	<a href="header2.html">Header Type 2</a>
+																</li>
+																<li>
+																	<a href="header3.html">Header Type 3</a>
+																</li>
+																<li>
+																	<a href="header4.html">Header Type 4</a>
+																</li>
+																<li>
+																	<a href="header5.html">Header Type 5</a>
+																</li>
+																<li>
+																	<a href="header6.html">Header Type 6</a>
+																</li>
+															</ul>
+														</li>
+														<li class="mega-menu-col">
+															<a href="#">Side Menus</a>
+															<ul>
+																<li>
+																	<a href="header-side.html">Push Left</a>
+																</li>
+																<li>
+																	<a href="header-side-right.html">Push Right</a>
+																</li>
+																<li>
+																	<a href="header-side-slide.html">Slide Left</a>
+																</li>
+																<li>
+																	<a href="header-side-slide-right.html">Slide Right</a>
+																</li>
+																<li>
+																	<a href="header-side-sticked.html">Sticked Left</a>
+																</li>
+																<li>
+																	<a href="header-side-sticked-right.html">Sticked Right</a>
+																</li>
+															</ul>
+														</li>
+														<li class="mega-menu-col">
+															<a href="title1.html">Title Sections</a>
+															<ul>
+																<li>
+																	<a href="title1.html">Title section 1</a>
+																</li>
+																<li>
+																	<a href="title2.html">Title section 2</a>
+																</li>
+																<li>
+																	<a href="title3.html">Title section 3</a>
+																</li>
+																<li>
+																	<a href="title4.html">Title section 4</a>
+																</li>
+																<li>
+																	<a href="title5.html">Title section 5</a>
+																</li>
+																<li>
+																	<a href="title6.html">Title section 6</a>
+																</li>
+															</ul>
+														</li>
+														<li class="mega-menu-col">
+															<a href="footer1.html#footer">Footers</a>
+															<ul>
+																<li>
+																	<a href="footer1.html#footer">Footer Type 1</a>
+																</li>
+																<li>
+																	<a href="footer2.html#footer">Footer Type 2</a>
+																</li>
+																<li>
+																	<a href="footer3.html#footer">Footer Type 3</a>
+																</li>
+																<li>
+																	<a href="footer4.html#footer">Footer Type 4</a>
+																</li>
+																<li>
+																	<a href="footer5.html#footer">Footer Type 5</a>
+																</li>
+																<li>
+																	<a href="footer6.html#footer">Footer Type 6</a>
+																</li>
+															</ul>
+														</li>
+														<li class="mega-menu-col">
+															<a href="copyright1.html#copyright">Copyright</a>
+
+															<ul>
+																<li>
+																	<a href="copyright1.html#copyright">Copyright 1</a>
+																</li>
+																<li>
+																	<a href="copyright2.html#copyright">Copyright 2</a>
+																</li>
+																<li>
+																	<a href="copyright3.html#copyright">Copyright 3</a>
+																</li>
+																<li>
+																	<a href="copyright4.html#copyright">Copyright 4</a>
+																</li>
+																<li>
+																	<a href="copyright5.html#copyright">Copyright 5</a>
+																</li>
+																<li>
+																	<a href="copyright6.html#copyright">Copyright 6</a>
+																</li>
+															</ul>
+														</li>
+
+													</ul>
+												</div> <!-- eof mega menu -->
+											</li>
+											<!-- eof features -->
+											<!-- contacts -->
+											<li>
+												<a href="contact.html">Contact</a>
+												<ul>
+													<li>
+														<a href="contact.html">Contact 1</a>
+													</li>
+													<li>
+														<a href="contact2.html">Contact 2</a>
+													</li>
+													<li>
+														<a href="contact3.html">Contact 3</a>
+													</li>
+													<li>
+														<a href="contact4.html">Contact 4</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof contacts -->
+										</ul>
+
+
+									</nav>
+									<!-- eof main nav -->
+
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- header toggler -->
+
+					<span class="toggle_menu"><span></span></span>
+
+				</header>
+
+				<section class="page_title ds s-pt-105 s-pb-50 s-pt-lg-115 s-pb-lg-60">
+					<div class="divider-3 d-none d-lg-block"></div>
+					<div class="container">
+						<div class="row">
+
+							<div class="col-md-12">
+								<h1 class="bold text-center text-lg-left">Shortcodes: Buttons</h1>
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item">
+										<a href="index.html">Home</a>
+									</li>
+									<li class="breadcrumb-item">
+										<a href="#">Pages</a>
+									</li>
+									<li class="breadcrumb-item active">
+										Shortcodes: Buttons
+									</li>
+								</ol>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+
+			</div>
+
+
+			<section class="ls s-pt-50 s-pt-lg-90 s-pt-xl-140 c-mb-60">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h4>Buttons in Light Section</h4>
+							<hr>
+							<h5>Theme color Big Buttons</h5>
+							<button type="button" class="btn btn-big btn-maincolor">Main color</button>
+							<button type="button" class="btn btn-big btn-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-big btn-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-big btn-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-big btn-grey">Grey color</button>
+							<h5>Theme color Medium Buttons</h5>
+							<button type="button" class="btn btn-maincolor">Main color</button>
+							<button type="button" class="btn btn-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-grey">Grey color</button>
+							<h5>Theme color Small Buttons</h5>
+							<button type="button" class="btn btn-small btn-maincolor">Main color</button>
+							<button type="button" class="btn btn-small btn-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-small btn-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-small btn-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-small btn-grey">Grey color</button>
+							<h5>Bootstrap color Buttons</h5>
+							<button type="button" class="btn btn-primary">Primary</button>
+							<button type="button" class="btn btn-secondary">Secondary</button>
+							<button type="button" class="btn btn-success">Success</button>
+							<button type="button" class="btn btn-info">Info</button>
+							<button type="button" class="btn btn-warning">Warning</button>
+							<button type="button" class="btn btn-danger">Danger</button>
+							<button type="button" class="btn btn-link">Link</button>
+							<h5>Theme color outline Big Buttons</h5>
+							<button type="button" class="btn btn-big btn-outline-maincolor">Main color</button>
+							<button type="button" class="btn btn-big btn-outline-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-big btn-outline-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-big btn-outline-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-big btn-outline-grey">Grey color</button>
+							<h5>Theme color outline Medium Buttons</h5>
+							<button type="button" class="btn btn-outline-maincolor">Main color</button>
+							<button type="button" class="btn btn-outline-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-outline-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-outline-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-outline-grey">Grey color</button>
+							<h5>Theme color outline Small Buttons</h5>
+							<button type="button" class="btn btn-small btn-outline-maincolor">Main color</button>
+							<button type="button" class="btn btn-small btn-outline-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-small btn-outline-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-small btn-outline-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-small btn-outline-grey">Grey color</button>
+
+							<h5>Bootstrap color outline Buttons</h5>
+							<button type="button" class="btn btn-outline-primary">Primary</button>
+							<button type="button" class="btn btn-outline-secondary">Secondary</button>
+							<button type="button" class="btn btn-outline-success">Success</button>
+							<button type="button" class="btn btn-outline-info">Info</button>
+							<button type="button" class="btn btn-outline-warning">Warning</button>
+							<button type="button" class="btn btn-outline-danger">Danger</button>
+
+							<h4>Links in Light Section</h4>
+							<hr>
+							<h5>Theme color Big Links</h5>
+							<a href="#" class="btn btn-big btn-maincolor">Main color</a>
+							<a href="#" class="btn btn-big btn-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-big btn-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-big btn-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-big btn-grey">Grey color</a>
+							<h5>Theme color Medium Links</h5>
+							<a href="#" class="btn btn-maincolor">Main color</a>
+							<a href="#" class="btn btn-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-grey">Grey color</a>
+							<h5>Theme color Small Links</h5>
+							<a href="#" class="btn btn-small btn-maincolor">Main color</a>
+							<a href="#" class="btn btn-small btn-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-small btn-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-small btn-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-small btn-grey">Grey color</a>
+							<h5>Bootstrap color Links</h5>
+							<a href="#" class="btn btn-primary">Primary</a>
+							<a href="#" class="btn btn-secondary">Secondary</a>
+							<a href="#" class="btn btn-success">Success</a>
+							<a href="#" class="btn btn-info">Info</a>
+							<a href="#" class="btn btn-warning">Warning</a>
+							<a href="#" class="btn btn-danger">Danger</a>
+							<a href="#" class="btn btn-link">Link</a>
+							<h5>Theme color outline Big Links</h5>
+							<a href="#" class="btn btn-big btn-outline-maincolor">Main color</a>
+							<a href="#" class="btn btn-big btn-outline-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-big btn-outline-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-big btn-outline-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-big btn-outline-grey">Grey color</a>
+							<h5>Theme color outline Medium Links</h5>
+							<a href="#" class="btn btn-outline-maincolor">Main color</a>
+							<a href="#" class="btn btn-outline-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-outline-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-outline-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-outline-grey">Grey color</a>
+							<h5>Theme color outline Small Links</h5>
+							<a href="#" class="btn btn-small btn-outline-maincolor">Main color</a>
+							<a href="#" class="btn btn-small btn-outline-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-small btn-outline-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-small btn-outline-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-small btn-outline-grey">Grey color</a>
+							<h5>Bootstrap color </h5>
+							<a href="#" class="btn btn-outline-primary">Primary</a>
+							<a href="#" class="btn btn-outline-secondary">Secondary</a>
+							<a href="#" class="btn btn-outline-success">Success</a>
+							<a href="#" class="btn btn-outline-info">Info</a>
+							<a href="#" class="btn btn-outline-warning">Warning</a>
+							<a href="#" class="btn btn-outline-danger">Danger</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls ms s-py-50 c-mb-60">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h4>Buttons in Light Muted Section</h4>
+							<hr>
+							<h5>Theme color Big Buttons</h5>
+							<button type="button" class="btn btn-big btn-maincolor">Main color</button>
+							<button type="button" class="btn btn-big btn-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-big btn-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-big btn-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-big btn-grey">Grey color</button>
+							<h5>Theme color Medium Buttons</h5>
+							<button type="button" class="btn btn-maincolor">Main color</button>
+							<button type="button" class="btn btn-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-grey">Grey color</button>
+							<h5>Theme color Small Buttons</h5>
+							<button type="button" class="btn btn-small btn-maincolor">Main color</button>
+							<button type="button" class="btn btn-small btn-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-small btn-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-small btn-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-small btn-grey">Grey color</button>
+							<h5>Bootstrap color Buttons</h5>
+							<button type="button" class="btn btn-primary">Primary</button>
+							<button type="button" class="btn btn-secondary">Secondary</button>
+							<button type="button" class="btn btn-success">Success</button>
+							<button type="button" class="btn btn-info">Info</button>
+							<button type="button" class="btn btn-warning">Warning</button>
+							<button type="button" class="btn btn-danger">Danger</button>
+							<button type="button" class="btn btn-link">Link</button>
+							<h5>Theme color outline Big Buttons</h5>
+							<button type="button" class="btn btn-big btn-outline-maincolor">Main color</button>
+							<button type="button" class="btn btn-big btn-outline-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-big btn-outline-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-big btn-outline-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-big btn-outline-grey">Grey color</button>
+							<h5>Theme color outline Medium Buttons</h5>
+							<button type="button" class="btn btn-outline-maincolor">Main color</button>
+							<button type="button" class="btn btn-outline-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-outline-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-outline-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-outline-grey">Grey color</button>
+							<h5>Theme color outline Small Buttons</h5>
+							<button type="button" class="btn btn-small btn-outline-maincolor">Main color</button>
+							<button type="button" class="btn btn-small btn-outline-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-small btn-outline-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-small btn-outline-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-small btn-outline-grey">Grey color</button>
+
+							<h5>Bootstrap color outline Buttons</h5>
+							<button type="button" class="btn btn-outline-primary">Primary</button>
+							<button type="button" class="btn btn-outline-secondary">Secondary</button>
+							<button type="button" class="btn btn-outline-success">Success</button>
+							<button type="button" class="btn btn-outline-info">Info</button>
+							<button type="button" class="btn btn-outline-warning">Warning</button>
+							<button type="button" class="btn btn-outline-danger">Danger</button>
+
+							<h4>Links in Light Muted Section</h4>
+							<hr>
+							<h5>Theme color Big Links</h5>
+							<a href="#" class="btn btn-big btn-maincolor">Main color</a>
+							<a href="#" class="btn btn-big btn-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-big btn-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-big btn-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-big btn-grey">Grey color</a>
+							<h5>Theme color Medium Links</h5>
+							<a href="#" class="btn btn-maincolor">Main color</a>
+							<a href="#" class="btn btn-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-grey">Grey color</a>
+							<h5>Theme color Small Links</h5>
+							<a href="#" class="btn btn-small btn-maincolor">Main color</a>
+							<a href="#" class="btn btn-small btn-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-small btn-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-small btn-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-small btn-grey">Grey color</a>
+							<h5>Bootstrap color Links</h5>
+							<a href="#" class="btn btn-primary">Primary</a>
+							<a href="#" class="btn btn-secondary">Secondary</a>
+							<a href="#" class="btn btn-success">Success</a>
+							<a href="#" class="btn btn-info">Info</a>
+							<a href="#" class="btn btn-warning">Warning</a>
+							<a href="#" class="btn btn-danger">Danger</a>
+							<a href="#" class="btn btn-link">Link</a>
+							<h5>Theme color outline Big Links</h5>
+							<a href="#" class="btn btn-big btn-outline-maincolor">Main color</a>
+							<a href="#" class="btn btn-big btn-outline-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-big btn-outline-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-big btn-outline-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-big btn-outline-grey">Grey color</a>
+							<h5>Theme color outline Medium Links</h5>
+							<a href="#" class="btn btn-outline-maincolor">Main color</a>
+							<a href="#" class="btn btn-outline-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-outline-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-outline-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-outline-grey">Grey color</a>
+							<h5>Theme color outline Small Links</h5>
+							<a href="#" class="btn btn-small btn-outline-maincolor">Main color</a>
+							<a href="#" class="btn btn-small btn-outline-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-small btn-outline-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-small btn-outline-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-small btn-outline-grey">Grey color</a>
+							<h5>Bootstrap color </h5>
+							<a href="#" class="btn btn-outline-primary">Primary</a>
+							<a href="#" class="btn btn-outline-secondary">Secondary</a>
+							<a href="#" class="btn btn-outline-success">Success</a>
+							<a href="#" class="btn btn-outline-info">Info</a>
+							<a href="#" class="btn btn-outline-warning">Warning</a>
+							<a href="#" class="btn btn-outline-danger">Danger</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ds s-py-50 c-mb-60">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h4>Buttons in Dark Section</h4>
+							<hr>
+							<h5>Theme color Big Buttons</h5>
+							<button type="button" class="btn btn-big btn-maincolor">Main color</button>
+							<button type="button" class="btn btn-big btn-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-big btn-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-big btn-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-big btn-grey">Grey color</button>
+							<h5>Theme color Medium Buttons</h5>
+							<button type="button" class="btn btn-maincolor">Main color</button>
+							<button type="button" class="btn btn-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-grey">Grey color</button>
+							<h5>Theme color Small Buttons</h5>
+							<button type="button" class="btn btn-small btn-maincolor">Main color</button>
+							<button type="button" class="btn btn-small btn-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-small btn-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-small btn-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-small btn-grey">Grey color</button>
+							<h5>Bootstrap color Buttons</h5>
+							<button type="button" class="btn btn-primary">Primary</button>
+							<button type="button" class="btn btn-secondary">Secondary</button>
+							<button type="button" class="btn btn-success">Success</button>
+							<button type="button" class="btn btn-info">Info</button>
+							<button type="button" class="btn btn-warning">Warning</button>
+							<button type="button" class="btn btn-danger">Danger</button>
+							<button type="button" class="btn btn-link">Link</button>
+							<h5>Theme color outline Big Buttons</h5>
+							<button type="button" class="btn btn-big btn-outline-maincolor">Main color</button>
+							<button type="button" class="btn btn-big btn-outline-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-big btn-outline-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-big btn-outline-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-big btn-outline-grey">Grey color</button>
+							<h5>Theme color outline Medium Buttons</h5>
+							<button type="button" class="btn btn-outline-maincolor">Main color</button>
+							<button type="button" class="btn btn-outline-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-outline-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-outline-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-outline-grey">Grey color</button>
+							<h5>Theme color outline Small Buttons</h5>
+							<button type="button" class="btn btn-small btn-outline-maincolor">Main color</button>
+							<button type="button" class="btn btn-small btn-outline-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-small btn-outline-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-small btn-outline-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-small btn-outline-grey">Grey color</button>
+
+							<h5>Bootstrap color outline Buttons</h5>
+							<button type="button" class="btn btn-outline-primary">Primary</button>
+							<button type="button" class="btn btn-outline-secondary">Secondary</button>
+							<button type="button" class="btn btn-outline-success">Success</button>
+							<button type="button" class="btn btn-outline-info">Info</button>
+							<button type="button" class="btn btn-outline-warning">Warning</button>
+							<button type="button" class="btn btn-outline-danger">Danger</button>
+
+							<h4>Buttons in Dark Section</h4>
+							<hr>
+							<h5>Theme color Big Links</h5>
+							<a href="#" class="btn btn-big btn-maincolor">Main color</a>
+							<a href="#" class="btn btn-big btn-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-big btn-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-big btn-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-big btn-grey">Grey color</a>
+							<h5>Theme color Medium Links</h5>
+							<a href="#" class="btn btn-maincolor">Main color</a>
+							<a href="#" class="btn btn-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-grey">Grey color</a>
+							<h5>Theme color Small Links</h5>
+							<a href="#" class="btn btn-small btn-maincolor">Main color</a>
+							<a href="#" class="btn btn-small btn-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-small btn-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-small btn-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-small btn-grey">Grey color</a>
+							<h5>Bootstrap color Links</h5>
+							<a href="#" class="btn btn-primary">Primary</a>
+							<a href="#" class="btn btn-secondary">Secondary</a>
+							<a href="#" class="btn btn-success">Success</a>
+							<a href="#" class="btn btn-info">Info</a>
+							<a href="#" class="btn btn-warning">Warning</a>
+							<a href="#" class="btn btn-danger">Danger</a>
+							<a href="#" class="btn btn-link">Link</a>
+							<h5>Theme color outline Big Links</h5>
+							<a href="#" class="btn btn-big btn-outline-maincolor">Main color</a>
+							<a href="#" class="btn btn-big btn-outline-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-big btn-outline-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-big btn-outline-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-big btn-outline-grey">Grey color</a>
+							<h5>Theme color outline Medium Links</h5>
+							<a href="#" class="btn btn-outline-maincolor">Main color</a>
+							<a href="#" class="btn btn-outline-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-outline-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-outline-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-outline-grey">Grey color</a>
+							<h5>Theme color outline Small Links</h5>
+							<a href="#" class="btn btn-small btn-outline-maincolor">Main color</a>
+							<a href="#" class="btn btn-small btn-outline-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-small btn-outline-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-small btn-outline-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-small btn-outline-grey">Grey color</a>
+							<h5>Bootstrap color </h5>
+							<a href="#" class="btn btn-outline-primary">Primary</a>
+							<a href="#" class="btn btn-outline-secondary">Secondary</a>
+							<a href="#" class="btn btn-outline-success">Success</a>
+							<a href="#" class="btn btn-outline-info">Info</a>
+							<a href="#" class="btn btn-outline-warning">Warning</a>
+							<a href="#" class="btn btn-outline-danger">Danger</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ds bs s-pt-50 s-pb-0 s-pb-lg-90 c-mb-60">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h4>Buttons in Muted Dark Section</h4>
+							<hr>
+							<h5>Theme color Big Buttons</h5>
+							<button type="button" class="btn btn-big btn-maincolor">Main color</button>
+							<button type="button" class="btn btn-big btn-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-big btn-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-big btn-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-big btn-grey">Grey color</button>
+							<h5>Theme color Medium Buttons</h5>
+							<button type="button" class="btn btn-maincolor">Main color</button>
+							<button type="button" class="btn btn-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-grey">Grey color</button>
+							<h5>Theme color Small Buttons</h5>
+							<button type="button" class="btn btn-small btn-maincolor">Main color</button>
+							<button type="button" class="btn btn-small btn-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-small btn-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-small btn-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-small btn-grey">Grey color</button>
+							<h5>Bootstrap color Buttons</h5>
+							<button type="button" class="btn btn-primary">Primary</button>
+							<button type="button" class="btn btn-secondary">Secondary</button>
+							<button type="button" class="btn btn-success">Success</button>
+							<button type="button" class="btn btn-info">Info</button>
+							<button type="button" class="btn btn-warning">Warning</button>
+							<button type="button" class="btn btn-danger">Danger</button>
+							<button type="button" class="btn btn-link">Link</button>
+							<h5>Theme color outline Big Buttons</h5>
+							<button type="button" class="btn btn-big btn-outline-maincolor">Main color</button>
+							<button type="button" class="btn btn-big btn-outline-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-big btn-outline-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-big btn-outline-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-big btn-outline-grey">Grey color</button>
+							<h5>Theme color outline Medium Buttons</h5>
+							<button type="button" class="btn btn-outline-maincolor">Main color</button>
+							<button type="button" class="btn btn-outline-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-outline-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-outline-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-outline-grey">Grey color</button>
+							<h5>Theme color outline Small Buttons</h5>
+							<button type="button" class="btn btn-small btn-outline-maincolor">Main color</button>
+							<button type="button" class="btn btn-small btn-outline-maincolor2">Main color 2</button>
+							<button type="button" class="btn btn-small btn-outline-maincolor3">Main color 3</button>
+							<button type="button" class="btn btn-small btn-outline-darkgrey">Darkgrey color</button>
+							<button type="button" class="btn btn-small btn-outline-grey">Grey color</button>
+
+							<h5>Bootstrap color outline Buttons</h5>
+							<button type="button" class="btn btn-outline-primary">Primary</button>
+							<button type="button" class="btn btn-outline-secondary">Secondary</button>
+							<button type="button" class="btn btn-outline-success">Success</button>
+							<button type="button" class="btn btn-outline-info">Info</button>
+							<button type="button" class="btn btn-outline-warning">Warning</button>
+							<button type="button" class="btn btn-outline-danger">Danger</button>
+
+							<h4>Links in Muted Dark Section</h4>
+							<hr>
+							<h5>Theme color Big Links</h5>
+							<a href="#" class="btn btn-big btn-maincolor">Main color</a>
+							<a href="#" class="btn btn-big btn-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-big btn-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-big btn-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-big btn-grey">Grey color</a>
+							<h5>Theme color Medium Links</h5>
+							<a href="#" class="btn btn-maincolor">Main color</a>
+							<a href="#" class="btn btn-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-grey">Grey color</a>
+							<h5>Theme color Small Links</h5>
+							<a href="#" class="btn btn-small btn-maincolor">Main color</a>
+							<a href="#" class="btn btn-small btn-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-small btn-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-small btn-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-small btn-grey">Grey color</a>
+							<h5>Bootstrap color Links</h5>
+							<a href="#" class="btn btn-primary">Primary</a>
+							<a href="#" class="btn btn-secondary">Secondary</a>
+							<a href="#" class="btn btn-success">Success</a>
+							<a href="#" class="btn btn-info">Info</a>
+							<a href="#" class="btn btn-warning">Warning</a>
+							<a href="#" class="btn btn-danger">Danger</a>
+							<a href="#" class="btn btn-link">Link</a>
+							<h5>Theme color outline Big Links</h5>
+							<a href="#" class="btn btn-big btn-outline-maincolor">Main color</a>
+							<a href="#" class="btn btn-big btn-outline-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-big btn-outline-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-big btn-outline-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-big btn-outline-grey">Grey color</a>
+							<h5>Theme color outline Medium Links</h5>
+							<a href="#" class="btn btn-outline-maincolor">Main color</a>
+							<a href="#" class="btn btn-outline-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-outline-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-outline-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-outline-grey">Grey color</a>
+							<h5>Theme color outline Small Links</h5>
+							<a href="#" class="btn btn-small btn-outline-maincolor">Main color</a>
+							<a href="#" class="btn btn-small btn-outline-maincolor2">Main color 2</a>
+							<a href="#" class="btn btn-small btn-outline-maincolor3">Main color 3</a>
+							<a href="#" class="btn btn-small btn-outline-darkgrey">Darkgrey color</a>
+							<a href="#" class="btn btn-small btn-outline-grey">Grey color</a>
+							<h5>Bootstrap color </h5>
+							<a href="#" class="btn btn-outline-primary">Primary</a>
+							<a href="#" class="btn btn-outline-secondary">Secondary</a>
+							<a href="#" class="btn btn-outline-success">Success</a>
+							<a href="#" class="btn btn-outline-info">Info</a>
+							<a href="#" class="btn btn-outline-warning">Warning</a>
+							<a href="#" class="btn btn-outline-danger">Danger</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<footer class="page_footer text-center text-md-left ds ms s-pt-65 s-pt-lg-125 s-pb-lg-35 c-gutter-40 main-footer">
+				<div class="container">
+					<div class="row">
+						<div class="divider-20 d-none d-lg-block"></div>
+
+						<div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+
+							<div class="widget widget_icons_list">
+								<a href="index.html" class="logo">
+									<img src="images/logo.png" alt="">
+									<span class="logo-text fw-500">Candy<span class="fw-200">Car</span></span>
+								</a>
+								<div class="media side-icon-box">
+									<div class="icon-styled color-main">
+										<i class="fa fa-map-marker"></i>
+									</div>
+									<p class="media-body color-grey">2688 Simpson Avenue Harrisburg, PA 17109 </p>
+								</div>
+								<div class="media side-icon-box">
+									<div class="icon-styled color-main">
+										<i class="fa fa-phone"></i>
+									</div>
+
+									<p class="media-body color-grey">+1 234 56 78</p>
+								</div>
+								<div class="media side-icon-box">
+									<div class="icon-styled color-main">
+										<i class="fa fa-envelope"></i>
+									</div>
+									<p class="media-body color-grey">
+										<a href="mailto:">info@candycar.com</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-3 animate order-md-3 order-lg-2" data-animation="fadeInUp">
+							<div class="widget widget_page_links">
+								<h3>Useful Pages</h3>
+								<ul>
+									<li>
+										<a href="#"><i class="ico-check-circle"></i>Contact Us</a>
+									</li>
+									<li>
+										<a href="#"><i class="ico-check-circle"></i>Blog post</a>
+									</li>
+									<li>
+										<a href="#"><i class="ico-check-circle"></i>About Us</a>
+									</li>
+									<li>
+										<a href="#"><i class="ico-check-circle"></i>Services</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-3 animate order-md-4 order-lg-3" data-animation="fadeInUp">
+							<div class="widget widget_services_links">
+								<h3>Services</h3>
+								<ul>
+									<li>
+										<a href="#"><i class="ico-check-circle"></i>Exterior Hand Wash</a>
+									</li>
+									<li>
+										<a href="#"><i class="ico-check-circle"></i>Tower Hand Dry</a>
+									</li>
+									<li>
+										<a href="#"><i class="ico-check-circle"></i>Tire Dressing</a>
+									</li>
+									<li>
+										<a href="#"><i class="ico-check-circle"></i>Wheel Shine</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-3 c-gutter-10 animate order-lg-4" data-animation="fadeInUp">
+							<div class="widget widget_working_hours">
+								<h3>Our Hours</h3>
+								<ul>
+									<li class="row">
+										<div class="color-grey col-3">
+											Mn-Fr
+										</div>
+										<div class="col-md-9 col-5">
+											<span class="color-darkgrey">9.<sup>00</sup>am - 8.<sup>00</sup>pm</span>
+										</div>
+									</li>
+									<li class="row">
+										<div class="color-grey col-3">
+											Sat
+										</div>
+										<div class="col-md-9 col-5">
+											<span class="color-darkgrey">9.<sup>00</sup>am - 4.<sup>00</sup>pm</span>
+										</div>
+									</li>
+									<li class="row">
+										<div class="color-grey col-3">
+											Sun
+										</div>
+										<div class="col-md-9 col-5">
+											<span class="color-darkgrey">output</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</footer>
+
+
+			<section class="page_copyright ds ms s-pt-5 s-pb-25 s-py-lg-20">
+				<div class="container">
+					<div class="divider-2 d-none d-lg-block"></div>
+					<div class="row align-items-center">
+						<div class="divider-20 d-none d-lg-block"></div>
+
+						<div class="col-md-12 text-center">
+							<p class="social-icons with-border">
+								<span><a href="https://www.facebook.com/" class="fa fa-facebook border-icon rounded-icon" title="facebook"></a></span>
+								<span><a href="https://telegram.org/" class="fa fa-paper-plane border-icon rounded-icon" title="telegram"></a></span>
+								<span><a href="https://www.instagram.com/" class="fa fa-instagram border-icon rounded-icon" title="instagram"></a></span>
+							</p>
+							<p><a target="_blank" href="https://templateshub.net">Templates Hub</a></p>
+						</div>
+						<div class="divider-20 d-none d-lg-block"></div>
+					</div>
+				</div>
+			</section>
+
+
+		</div><!-- eof #box_wrapper -->
+	</div><!-- eof #canvas -->
+
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/switcher.js"></script>
+
+</body>
+
+</html>
