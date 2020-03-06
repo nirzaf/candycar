@@ -13,25 +13,6 @@ jQuery(document).ready(function(){
 	}
 	}
 
-	var switcherHTML = '<div id="switcher">';
-		switcherHTML +=    '<div class="color_switcher_header">';
-		switcherHTML +=    		'<span class="fa fa-cog"></span>';
-		switcherHTML +=    		deleteAllCookiesHTML;
-		switcherHTML +=    '<h4>Styles Selector</h4></div>';
-		switcherHTML +=    '<div id="switcher_accent_color">';
-		switcherHTML +=    		'<p>Accent color:</p>';
-		switcherHTML +=    		'<ul id="switcher-colors" class="list-inline">';
-		switcherHTML +=        		'<li>';
-		switcherHTML +=            		'<a href="#" data-color="" class="color1"></a>';
-		switcherHTML +=        		'</li>';
-		switcherHTML +=        		'<li>';
-		switcherHTML +=            		'<a href="#" data-color="2" class="color2"></a>';
-		switcherHTML +=        		'</li>';
-		switcherHTML +=        		'<li>';
-		switcherHTML +=            		'<a href="#" data-color="3" class="color3"></a>';
-		switcherHTML +=        		'</li>';
-		switcherHTML +=    		'</ul>';
-		switcherHTML +=    	'</div>';
 
 		/*
 
