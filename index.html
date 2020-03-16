@@ -4,6 +4,96 @@
 	<title>Car West Auto Service - Made for the Best</title>
 	<meta charset="utf-8">
 
+	<script>
+		// Gallery image hover
+$( ".img-wrapper" ).hover(
+  function() {
+    $(this).find(".img-overlay").animate({opacity: 1}, 600);
+  }, function() {
+    $(this).find(".img-overlay").animate({opacity: 0}, 600);
+  }
+);
+
+// Lightbox
+var $overlay = $('<div id="overlay"></div>');
+var $image = $("<img>");
+var $prevButton = $('<div id="prevButton"><i class="fa fa-chevron-left"></i></div>');
+var $nextButton = $('<div id="nextButton"><i class="fa fa-chevron-right"></i></div>');
+var $exitButton = $('<div id="exitButton"><i class="fa fa-times"></i></div>');
+
+// Add overlay
+$overlay.append($image).prepend($prevButton).append($nextButton).append($exitButton);
+$("#gallery").append($overlay);
+
+// Hide overlay on default
+$overlay.hide();
+
+// When an image is clicked
+$(".img-overlay").click(function(event) {
+  // Prevents default behavior
+  event.preventDefault();
+  // Adds href attribute to variable
+  var imageLocation = $(this).prev().attr("href");
+  // Add the image src to $image
+  $image.attr("src", imageLocation);
+  // Fade in the overlay
+  $overlay.fadeIn("slow");
+});
+
+// When the overlay is clicked
+$overlay.click(function() {
+  // Fade out the overlay
+  $(this).fadeOut("slow");
+});
+
+// When next button is clicked
+$nextButton.click(function(event) {
+  // Hide the current image
+  $("#overlay img").hide();
+  // Overlay image location
+  var $currentImgSrc = $("#overlay img").attr("src");
+  // Image with matching location of the overlay image
+  var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
+  // Finds the next image
+  var $nextImg = $($currentImg.closest(".image").next().find("img"));
+  // All of the images in the gallery
+  var $images = $("#image-gallery img");
+  // If there is a next image
+  if ($nextImg.length > 0) { 
+    // Fade in the next image
+    $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+  } else {
+    // Otherwise fade in the first image
+    $("#overlay img").attr("src", $($images[0]).attr("src")).fadeIn(800);
+  }
+  // Prevents overlay from being hidden
+  event.stopPropagation();
+});
+
+// When previous button is clicked
+$prevButton.click(function(event) {
+  // Hide the current image
+  $("#overlay img").hide();
+  // Overlay image location
+  var $currentImgSrc = $("#overlay img").attr("src");
+  // Image with matching location of the overlay image
+  var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
+  // Finds the next image
+  var $nextImg = $($currentImg.closest(".image").prev().find("img"));
+  // Fade in the next image
+  $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+  // Prevents overlay from being hidden
+  event.stopPropagation();
+});
+
+// When the exit button is clicked
+$exitButton.click(function() {
+  // Fade out the overlay
+  $("#overlay").fadeOut("slow");
+});
+	</script>
+
+
 	<!--[if IE]>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<![endif]-->
@@ -25,66 +115,6 @@
 	<div class="preloader">
 		<div class="preloader_image"></div>
 	</div>
-
-	<!-- search modal -->
-	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
-		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		</button>
-		<div class="widget widget_search">
-			<form method="get" class="searchform search-form" action="http://newcityintl.lk/">
-				<div class="form-group">
-					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
-				</div>
-				<button type="submit" class="btn">Search</button>
-			</form>
-		</div>
-	</div>
-
-	<!-- Unyson messages modal -->
-	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
-		<div class="fw-messages-wrap ls p-normal">
-		</div>
-	</div><!-- eof .modal -->
-
-	<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="modalLoginForm" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="row c-gutter-0">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span>×</span>
-				</button>
-				<div class="col-6">
-					<div class="modal-content">
-						<div class="modal-header justify-content-center">
-							<h4 class="modal-title">Sign in</h4>
-						</div>
-						<div class="modal-body">
-							<form action="#">
-								<div class="form-group has-placeholder">
-									<label for="name-sigin">Your Name:</label>
-									<input type="text" class="form-control" id="name-sigin" placeholder="Enter your name" name="First name">
-								</div>
-								<div class="form-group has-placeholder">
-									<label for="sigpassword">Password:</label>
-									<input type="password" class="form-control" id="sigpassword" placeholder="password" name="sigpassword">
-								</div>
-								<div class="modal-password">
-									<a href="#" class="modal-password-btn">Forgot password?</a>
-								</div>
-								<div class="modal-footer d-flex justify-content-center">
-									<button type="submit" class="btn btn-small btn-maincolor log-btn">Log in</button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="col-6 ds s-overlay">
-					<img src="images/modal-login-form.jpg" alt="">
-				</div>
-			</div>
-		</div>
-	</div>
-
 
 	<!-- wrappers for visual page editor and boxed version of template -->
 	<div id="canvas">
@@ -890,51 +920,78 @@
 				</div>
 			</section>
 
-			<section class="ls s-py-55 s-py-lg-75" id="partners">
-				<div class="container-fluid">
-					<div class="divider-3"></div>
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							<div class="owl-carousel partners-carousel" data-center="true" data-loop="true" data-responsive-lg="10" data-responsive-md="6" data-responsive-sm="4" data-responsive-xs="3">
-								<a href="#">
-									<img src="images/partners/1.jpeg" alt="">
-								</a>
-								<a href="#">
-									<img src="images/partners/2.jpeg" alt="">
-								</a>
-								<a href="#">
-									<img src="images/partners/3.jpeg" alt="">
-								</a>
-								<a href="#">
-									<img src="images/partners/4.jpeg" alt="">
-								</a>
-								<a href="#">
-									<img src="images/partners/5.jpeg" alt="">
-								</a>
-								<a href="#">
-									<img src="images/partners/6.jpeg" alt="">
-								</a>
-								<a href="#">
-									<img src="images/partners/7.jpeg" alt="">
-								</a>
-								<a href="#">
-									<img src="images/partners/8.jpeg" alt="">
-								</a>
-								<a href="#">
-									<img src="images/partners/9.jpeg" alt="">
-								</a>
-								<a href="#">
-									<img src="images/partners/10.jpeg" alt="">
-								</a>
-								<a href="#">
-									<img src="images/partners/11.jpeg" alt="">
-								</a>
+			<section id="gallery">
+				<div class="container">
+					<div id="image-gallery">
+						<div class="row">
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+								<div class="img-wrapper">
+									<a href="images/partners/1.jpeg"><img src="images/partners/1.jpeg" class="img-responsive"></a>
+									<div class="img-overlay">
+										<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-				</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+								<div class="img-wrapper">
+									<a href="images/partners/2.jpeg"><img src="images/partners/2.jpeg" class="img-responsive"></a>
+									<div class="img-overlay">
+										<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+								<div class="img-wrapper">
+									<a href="images/partners/3.jpeg"><img src="images/partners/3.jpeg" class="img-responsive"></a>
+									<div class="img-overlay">
+										<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+								<div class="img-wrapper">
+									<a href="images/partners/4.jpeg"><img src="images/partners/4.jpeg" class="img-responsive"></a>
+									<div class="img-overlay">
+										<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+								<div class="img-wrapper">
+									<a href="images/partners/5.jpeg"><img src="images/partners/5.jpeg" class="img-responsive"></a>
+									<div class="img-overlay">
+										<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+								<div class="img-wrapper">
+									<a href="images/partners/6.jpeg"><img src="images/partners/6.jpeg" class="img-responsive"></a>
+									<div class="img-overlay">
+										<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+								<div class="img-wrapper">
+									<a href="images/partners/7.jpeg"><img src="images/partners/7.jpeg" class="img-responsive"></a>
+									<div class="img-overlay">
+										<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+								<div class="img-wrapper">
+									<a href="images/partners/8.jpeg"><img src="images/partners/8.jpeg" class="img-responsive"></a>
+									<div class="img-overlay">
+										<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+						</div><!-- End row -->
+					</div><!-- End image gallery -->
+				</div><!-- End container -->
 			</section>
-
 
 			<section class="page_copyright ds ms s-pt-5 s-pb-25 s-py-lg-20">
 				<div class="container">
